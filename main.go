@@ -16,7 +16,7 @@ func main() {
 	var svcAddr = svcHost + ":" + svcPort
 	fmt.Printf("address of target service: %s\n", svcAddr)
 
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 1; i++ {
 		go generateLoad(svcAddr)
 	}
 	select {}
